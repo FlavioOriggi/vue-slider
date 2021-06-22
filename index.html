@@ -19,18 +19,25 @@
         <div class="slider-wrapper">
 
             <!-- pulsante sx / precedente -->
-            <div class="prev">
+            <div class="prev" @click="prevPhoto">
                 <i class="fas fa-chevron-left"></i>
             </div>
 
             <!-- immagini -->
             <div class="image">
-                <img :src="photos[counter]" alt="panorama">
+                <img :src="photos[contatore]" alt="panorama">
             </div>
 
             <!-- pulsante dx / successivo -->
-            <div class="next">
+            <div class="next" @click="nextPhoto">
                 <i class="fas fa-chevron-right"></i>
+            </div>           
+
+            
+            <!-- sezione nav -->
+            <div class="nav">
+                <i :class="(index == contatore) ? 'active' : ''" class="fas fa-circle" v-for="(item, index) in photos"
+                @click="cambiaPhoto(index)"></i>               
             </div>
 
         </div>
