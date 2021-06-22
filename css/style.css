@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     margin: auto;
-    width:  70%;
+    width:  75%;
     height: 100vh;    
 }
 
@@ -19,3 +19,24 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.slider-wrapper .image{
+    height: 100%;
+}
+
+.slider-wrapper .image img{
+    height: 100%;
+}
+
+.fa-chevron-right, .fa-chevron-left{
+    font-size: 40px;
+    margin: 20px
+}
+
+.fas:hover{
+    cursor:pointer;
+}
+
+
+
